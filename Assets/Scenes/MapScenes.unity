@@ -1778,6 +1778,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 198754491}
     m_Modifications:
+    - target: {fileID: -5293832902144501539, guid: d77c3583db27a5a45b5daed923d08f72, type: 3}
+      propertyPath: nation
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3843046862360260277, guid: d77c3583db27a5a45b5daed923d08f72, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2967,6 +2971,10 @@ PrefabInstance:
     - target: {fileID: -5293832902144501539, guid: 9a4f56cb5aa264243a23966c91c7149d, type: 3}
       propertyPath: stone
       value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: -5293832902144501539, guid: 9a4f56cb5aa264243a23966c91c7149d, type: 3}
+      propertyPath: nation
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3843046862360260277, guid: 9a4f56cb5aa264243a23966c91c7149d, type: 3}
       propertyPath: m_LocalPosition.x
