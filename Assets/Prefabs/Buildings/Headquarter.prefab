@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3287606292942919031}
+  - component: {fileID: 7889641753961559543}
   m_Layer: 0
   m_Name: Headquarter
   m_TagString: Untagged
@@ -34,6 +35,32 @@ Transform:
   - {fileID: 2736510162421666641}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7889641753961559543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336063054654726707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38493c2aef7203e4e8ce4c2a3fe600be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  structureName: 
+  structurePic: {fileID: 0}
+  curHP: 0
+  maxHP: 100
+  faction: {fileID: 0}
+  selectionVisual: {fileID: 0}
+  spawnPoint: {fileID: 3721262135670879268}
+  rallyPoint: {fileID: 2736510162421666641}
+  unitPrefabs:
+  - {fileID: 186328, guid: 1edc38c082087d041b3917cf5f5b6301, type: 3}
+  recruitList: []
+  unitTimer: 0
+  curUnitProgress: 0
+  curUnitWaitTime: 0
 --- !u!1 &598360569530534958
 GameObject:
   m_ObjectHideFlags: 0
