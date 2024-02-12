@@ -161,9 +161,9 @@ GameObject:
   - component: {fileID: 1308359420691156607}
   - component: {fileID: 2415699413800379849}
   - component: {fileID: 8849072155485756018}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Female
-  m_TagString: Untagged
+  m_TagString: Unit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -212,7 +212,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: de561845393e3eb4cb803729d43d478a, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
@@ -230,7 +230,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 4
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -277,7 +277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c79bcb3f7cb5849892de9845dc32f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 0
+  id: 1
   unitName: 
   unitPic: {fileID: 0}
   curHP: 0
@@ -291,6 +291,12 @@ MonoBehaviour:
   state: 0
   faction: {fileID: 0}
   selectionVisual: {fileID: 0}
+  unitCost:
+    food: 50
+    wood: 10
+    gold: 20
+    stone: 0
+  unitWaitTime: 0.1
 --- !u!114 &8849072155485756018
 MonoBehaviour:
   m_ObjectHideFlags: 0
