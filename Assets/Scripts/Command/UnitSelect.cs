@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class UnitSelect : MonoBehaviour
 {
@@ -9,6 +10,11 @@ public class UnitSelect : MonoBehaviour
 
     [SerializeField]
     private Unit curUnit; //current selected single unit
+    
+    [SerializeField]
+    private Building curBuilding; //current selected single building
+    public Building CurBuilding { get { return curBuilding; } }
+
     public Unit CurUnit { get { return curUnit; } }
 
     private Camera cam;

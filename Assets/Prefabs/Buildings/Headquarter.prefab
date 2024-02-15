@@ -55,7 +55,7 @@ MonoBehaviour:
   curHP: 0
   maxHP: 100
   faction: {fileID: 0}
-  selectionVisual: {fileID: 0}
+  selectionVisual: {fileID: 1799416378710208856, guid: 99511e0019df30a448532a136326ff60, type: 3}
   spawnPoint: {fileID: 3721262135670879268}
   rallyPoint: {fileID: 2736510162421666641}
   unitPrefabs:

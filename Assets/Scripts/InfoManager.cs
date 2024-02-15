@@ -82,6 +82,14 @@ public class InfoManager : MonoBehaviour
         wpRngIcon.color = Color.clear;
         wpRngTxt.text = "";
     }
+    
+    public void ShowAllInfo(Building building)
+    {
+        SetPic(building.StructurePic);
+        nameTxt.text = building.StructureName;
 
+        hpIcon.color = Color.white;
+        hpTxt.text = $"{building.CurHP}/{building.MaxHP}";
+    }
 
 }
