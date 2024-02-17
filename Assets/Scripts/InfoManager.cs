@@ -25,8 +25,8 @@ public class InfoManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
+    
+     }
     
     private void SetPic(Sprite pic)
     {
@@ -91,5 +91,6 @@ public class InfoManager : MonoBehaviour
         hpIcon.color = Color.white;
         hpTxt.text = $"{building.CurHP}/{building.MaxHP}";
     }
+
 
 }

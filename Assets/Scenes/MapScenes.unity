@@ -1108,12 +1108,28 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4457538030005262041, guid: 1edc38c082087d041b3917cf5f5b6301, type: 3}
+      propertyPath: armour
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4457538030005262041, guid: 1edc38c082087d041b3917cf5f5b6301, type: 3}
       propertyPath: unitPic
       value: 
       objectReference: {fileID: 21300000, guid: c18bf1a3637178447b6d18e5d807319d, type: 3}
     - target: {fileID: 4457538030005262041, guid: 1edc38c082087d041b3917cf5f5b6301, type: 3}
       propertyPath: unitName
       value: Regular
+      objectReference: {fileID: 0}
+    - target: {fileID: 4457538030005262041, guid: 1edc38c082087d041b3917cf5f5b6301, type: 3}
+      propertyPath: visualRange
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4457538030005262041, guid: 1edc38c082087d041b3917cf5f5b6301, type: 3}
+      propertyPath: weaponRange
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4457538030005262041, guid: 1edc38c082087d041b3917cf5f5b6301, type: 3}
+      propertyPath: maxWpnDamage
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
