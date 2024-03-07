@@ -132,5 +132,5 @@ public class Unit : MonoBehaviour
         if (distance <= 1f)
             SetState(UnitState.Idle);
     }
-    
+
 }
