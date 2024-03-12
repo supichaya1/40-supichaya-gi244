@@ -11,7 +11,6 @@ public class ActionManager : MonoBehaviour
     private CanvasGroup cg;
 
     public static ActionManager instance;
-    
     void Awake()
     {
         instance = this;
