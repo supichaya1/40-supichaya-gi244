@@ -9,7 +9,9 @@ public enum UnitState
     Idle,
     Move,
     Attack,
-    Die
+    Die,
+    MoveToBuild,
+    BuildProgress
 }
 
 [Serializable]
