@@ -1615,7 +1615,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7889641753961559543, guid: 2f80cff0b95ab234fb24275887730b21, type: 3}
       propertyPath: curHP
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7889641753961559543, guid: 2f80cff0b95ab234fb24275887730b21, type: 3}
       propertyPath: faction
@@ -7201,7 +7201,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7889641753961559543, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
       propertyPath: curHP
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
