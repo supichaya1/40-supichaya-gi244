@@ -11,7 +11,11 @@ public enum UnitState
     Attack,
     Die,
     MoveToBuild,
-    BuildProgress
+    BuildProgress,
+    MoveToResource,
+    Gather,
+    DeliverToHQ,
+    StoreAtHQ
 }
 
 [Serializable]
@@ -83,8 +87,15 @@ public class Unit : MonoBehaviour
 
     [SerializeField] private Builder builder;
     public Builder Builder { get { return builder; } }
+    
+    [SerializeField] private bool isWorker;
+    public bool IsWorker { get { return isWorker; } set { isWorker = value; } }
 
-
+    [SerializeField] private Worker worker;
+    public Worker Worker { get { return worker; } }
+    
+    
+    
     private void Awake()
     {
         navAgent = GetComponent<NavMeshAgent>();
@@ -92,6 +103,11 @@ public class Unit : MonoBehaviour
         if (IsBuilder)
         {
             builder = GetComponent<Builder>();
+        }
+
+        if (IsWorker)
+        {
+            worker = GetComponent<Worker>();
         }
     }
 

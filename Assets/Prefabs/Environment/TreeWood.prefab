@@ -212,7 +212,7 @@ MonoBehaviour:
   rsrcType: 1
   quantity: 100
   maxQuantity: 100
-  selectionVisual: {fileID: 0}
+  selectionVisual: {fileID: 7215190472197065939}
   onRsrcQuantityChange:
     m_PersistentCalls:
       m_Calls: []
@@ -283,5 +283,10 @@ PrefabInstance:
 --- !u!4 &1012014183383144464 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8233354856694333605, guid: 52e78974c71712a4a8d6b961ded2cfc5, type: 3}
+  m_PrefabInstance: {fileID: 8955870852259600565}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7215190472197065939 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1758695884257989734, guid: 52e78974c71712a4a8d6b961ded2cfc5, type: 3}
   m_PrefabInstance: {fileID: 8955870852259600565}
   m_PrefabAsset: {fileID: 0}
