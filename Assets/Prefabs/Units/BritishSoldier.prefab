@@ -5142,6 +5142,7 @@ GameObject:
   - component: {fileID: -4047445907110587759}
   - component: {fileID: 4457538030005262041}
   - component: {fileID: -6827564702773517284}
+  - component: {fileID: 6615299799070286987}
   m_Layer: 6
   m_Name: BritishSoldier
   m_TagString: Unit
@@ -5288,6 +5289,7 @@ MonoBehaviour:
   curEnemyUnitTarget: {fileID: 0}
   attackRate: 1
   lastAttackTime: 0
+  defendRange: 30
 --- !u!114 &-6827564702773517284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5300,6 +5302,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25d569c1650419f4f8090d5b9225445d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6615299799070286987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c79bcb3f7cb5849892de9845dc32f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 0
+  unitName: 
+  unitPic: {fileID: 0}
+  curHP: 0
+  maxHP: 100
+  moveSpeed: 5
+  minWpnDamage: 0
+  maxWpnDamage: 0
+  armour: 0
+  visualRange: 0
+  weaponRange: 0
+  state: 0
+  faction: {fileID: 0}
+  selectionVisual: {fileID: 0}
+  unitCost:
+    food: 0
+    wood: 0
+    gold: 0
+    stone: 0
+  unitWaitTime: 0.1
+  isBuilder: 0
+  builder: {fileID: 0}
+  isWorker: 0
+  worker: {fileID: 0}
+  pathUpdateRate: 1
+  lastPathUpdateTime: 0
+  curEnemyUnitTarget: {fileID: 0}
+  attackRate: 1
+  lastAttackTime: 0
+  defendRange: 30
 --- !u!1 &186630
 GameObject:
   m_ObjectHideFlags: 0
