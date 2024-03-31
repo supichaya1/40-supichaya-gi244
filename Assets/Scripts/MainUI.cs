@@ -18,6 +18,9 @@ public class MainUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI woodText;
     [SerializeField] private TextMeshProUGUI goldText;
     [SerializeField] private TextMeshProUGUI stoneText;
+    
+    [SerializeField] private RectTransform selectionBox;
+    public RectTransform SelectionBox { get { return selectionBox; } }
 
     public static MainUI instance;
 
