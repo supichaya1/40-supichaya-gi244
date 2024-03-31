@@ -101,8 +101,7 @@ public class Unit : MonoBehaviour
     [SerializeField]
     private float lastPathUpdateTime;
     public float LastPathUpdateTime { get { return lastPathUpdateTime; } set { lastPathUpdateTime = value; } }
-    
-    
+
     
     private void Awake()
     {

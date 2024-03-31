@@ -6314,7 +6314,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5113451765626651930, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
       propertyPath: rsrcName
-      value: tree2
+      value: tree3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8644,6 +8644,7 @@ MonoBehaviour:
     m_Bits: 0
   curUnit: {fileID: 0}
   curBuilding: {fileID: 0}
+  curResource: {fileID: 0}
 --- !u!114 &2060102361 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: -5293832902144501539, guid: 9a4f56cb5aa264243a23966c91c7149d, type: 3}
