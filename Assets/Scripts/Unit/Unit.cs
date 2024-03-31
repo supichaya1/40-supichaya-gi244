@@ -16,7 +16,9 @@ public enum UnitState
     Gather,
     DeliverToHQ,
     StoreAtHQ,
-    MoveToEnemy
+    MoveToEnemy,
+    MoveToEnemyBuilding,
+    AttackBuilding
 }
 
 [Serializable]
@@ -106,6 +108,9 @@ public class Unit : MonoBehaviour
     [SerializeField]
     private Unit curEnemyUnitTarget;
 
+    [SerializeField] 
+    private Building curEnemyBuildingTarget;
+
     [SerializeField]
     private float attackRate = 1f; //how frequent this unit attacks in second
 
@@ -150,6 +155,12 @@ public class Unit : MonoBehaviour
                 break;
             case UnitState.AttackUnit:
                 AttackUpdate();
+                break;
+            case UnitState.MoveToEnemyBuilding:
+                MoveToEnemyBuildingUpdate();
+                break;
+            case UnitState.AttackBuilding:
+                AttackBuildingUpdate();
                 break;
         }
  
@@ -197,14 +208,12 @@ public class Unit : MonoBehaviour
         transform.rotation = Quaternion.Euler(0f, angle, 0f);
     }
     
-    
     protected virtual IEnumerator DestroyObject()
     {
         yield return new WaitForSeconds(5f);
         Destroy(gameObject);
     }
-
-
+    
     // called when my health reaches zero
     protected virtual void Die()
     {
@@ -220,9 +229,6 @@ public class Unit : MonoBehaviour
         StartCoroutine("DestroyObject");
     }
 
-
-
-
     // move to an enemy unit and attack them
     public void ToAttackUnit(Unit target)
     {
@@ -231,8 +237,6 @@ public class Unit : MonoBehaviour
         curEnemyUnitTarget = target;
         SetState(UnitState.MoveToEnemy);
     }
-
-
 
     // called when an enemy unit attacks us
     public void TakeDamage(Unit enemy, int damage)
@@ -253,10 +257,7 @@ public class Unit : MonoBehaviour
             ToAttackUnit(enemy); //always counter-attack
     }
 
-
-
-
- // called every frame the 'MoveToEnemy' state is active
+    // called every frame the 'MoveToEnemy' state is active
  public void MoveToEnemyUpdate()
  {
      // if our target is null, go idle
@@ -278,10 +279,6 @@ public class Unit : MonoBehaviour
      if (Vector3.Distance(transform.position, curEnemyUnitTarget.transform.position) <= WeaponRange)
          SetState(UnitState.AttackUnit);
  }
-
-
-
-
 
 // called every frame the 'Attack' state is active
 protected void AttackUpdate()
@@ -315,6 +312,73 @@ protected void AttackUpdate()
         //Debug.Log($"{unitName} - From Attack Update");
     }
 } //protected AttackUpdate
+
+
+// move to an enemy building and attack them
+public void ToAttackBuilding(Building target)
+{
+    curEnemyBuildingTarget = target;
+    SetState(UnitState.MoveToEnemyBuilding);
+}
+
+
+// called every frame the 'MoveToEnemyBuilding' state is active
+private void MoveToEnemyBuildingUpdate()
+{
+    if (curEnemyBuildingTarget == null)
+    {
+        SetState(UnitState.Idle);
+        return;
+    }
+
+    if (Time.time - lastPathUpdateTime > pathUpdateRate)
+    {
+        lastPathUpdateTime = Time.time;
+        navAgent.isStopped = false;
+        navAgent.SetDestination(curEnemyBuildingTarget.transform.position);
+    }
+
+    if ((Vector3.Distance(transform.position, curEnemyBuildingTarget.transform.position) - 4f) <= WeaponRange)
+    {
+        SetState(UnitState.AttackBuilding);
+    }
+}
+
+// called every frame the 'AttackBuilding' state is active
+private void AttackBuildingUpdate()
+ {
+    // if our target is dead, go idle
+    if (curEnemyBuildingTarget == null)
+    {
+        SetState(UnitState.Idle);
+        return;
+    }
+
+    // if we're still moving, stop
+    if (!navAgent.isStopped)
+    {
+        navAgent.isStopped = true;
+    }
+
+    // look at the enemy
+    LookAt(curEnemyBuildingTarget.transform.position);
+
+    // attack every 'attackRate' seconds
+    if (Time.time - lastAttackTime > attackRate)
+    {
+        lastAttackTime = Time.time;
+
+        curEnemyBuildingTarget.TakeDamage(UnityEngine.Random.Range(minWpnDamage, maxWpnDamage + 1));
+    }
+
+    // if we're too far away, move towards the enemy's building
+    if ((Vector3.Distance(transform.position, curEnemyBuildingTarget.transform.position) - 4f) > WeaponRange)
+    {
+        SetState(UnitState.MoveToEnemyBuilding);
+    }
+    
+    
+ }
 
 
 }
