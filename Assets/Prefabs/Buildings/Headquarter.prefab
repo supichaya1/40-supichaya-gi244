@@ -53,18 +53,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   structureName: Headquarter
   structurePic: {fileID: 21300000, guid: 5516ee2656eb0f643ade8fd979dc332e, type: 3}
-  curHP: 100
+  curHP: 1
   maxHP: 100
   faction: {fileID: 0}
   selectionVisual: {fileID: 2308102035041479314}
+  structureCost:
+    food: 0
+    wood: 200
+    gold: 50
+    stone: 200
   spawnPoint: {fileID: 3721262135670879268}
   rallyPoint: {fileID: 2736510162421666641}
   unitPrefabs:
   - {fileID: 186328, guid: 1edc38c082087d041b3917cf5f5b6301, type: 3}
+  - {fileID: 102334, guid: 67646b41a930cd0499efd8d552cdd550, type: 3}
+  - {fileID: 102334, guid: 1ddb1fecbd289b54bb259e424a558b32, type: 3}
   recruitList: []
   unitTimer: 0
   curUnitProgress: 0
   curUnitWaitTime: 0
+  isFunctional: 1
+  isHQ: 0
+  intoTheGround: 5
 --- !u!65 &6254545189118163163
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -111,7 +121,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!208 &3287601506739819890
 NavMeshObstacle:
