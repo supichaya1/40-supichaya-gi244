@@ -108,6 +108,9 @@ public class UnitSelect : MonoBehaviour
         
         if (curBuilding != null)
             curBuilding.ToggleSelectionVisual(false);
+        
+        if (curResource != null)
+            curResource.ToggleSelectionVisual(false);
     }
     
     private void ClearEverything()
