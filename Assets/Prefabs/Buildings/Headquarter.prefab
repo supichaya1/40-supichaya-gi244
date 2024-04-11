@@ -64,16 +64,15 @@ MonoBehaviour:
     stone: 200
   spawnPoint: {fileID: 3721262135670879268}
   rallyPoint: {fileID: 2736510162421666641}
-  unitPrefabs:
-  - {fileID: 186328, guid: 1edc38c082087d041b3917cf5f5b6301, type: 3}
-  - {fileID: 102334, guid: 67646b41a930cd0499efd8d552cdd550, type: 3}
-  - {fileID: 102334, guid: 1ddb1fecbd289b54bb259e424a558b32, type: 3}
+  unitPrefabs: []
   recruitList: []
   unitTimer: 0
   curUnitProgress: 0
   curUnitWaitTime: 0
   isFunctional: 1
   isHQ: 0
+  isHousing: 0
+  isBarrack: 0
   intoTheGround: 5
 --- !u!65 &6254545189118163163
 BoxCollider:

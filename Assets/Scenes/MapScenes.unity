@@ -1373,7 +1373,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7889641753961559543, guid: 2f80cff0b95ab234fb24275887730b21, type: 3}
       propertyPath: isHQ
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7889641753961559543, guid: 2f80cff0b95ab234fb24275887730b21, type: 3}
       propertyPath: curHP
@@ -1383,6 +1383,14 @@ PrefabInstance:
       propertyPath: faction
       value: 
       objectReference: {fileID: 2060102361}
+    - target: {fileID: 7889641753961559543, guid: 2f80cff0b95ab234fb24275887730b21, type: 3}
+      propertyPath: isBarrack
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889641753961559543, guid: 2f80cff0b95ab234fb24275887730b21, type: 3}
+      propertyPath: isHousing
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7889641753961559543, guid: 2f80cff0b95ab234fb24275887730b21, type: 3}
       propertyPath: isFunctional
       value: 1
@@ -3048,6 +3056,14 @@ PrefabInstance:
     - target: {fileID: 7889641753961559543, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
       propertyPath: curHP
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889641753961559543, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
+      propertyPath: isBarrack
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889641753961559543, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
+      propertyPath: isHousing
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7889641753961559543, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
       propertyPath: isFunctional
@@ -5446,6 +5462,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7889641753961559543, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
+      propertyPath: isBarrack
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889641753961559543, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
+      propertyPath: isHousing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889641753961559543, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
       propertyPath: isFunctional
       value: 1
       objectReference: {fileID: 0}
@@ -5900,6 +5924,14 @@ PrefabInstance:
     - target: {fileID: 7889641753961559543, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
       propertyPath: curHP
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889641753961559543, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
+      propertyPath: isBarrack
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889641753961559543, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
+      propertyPath: isHousing
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7889641753961559543, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
       propertyPath: isFunctional
