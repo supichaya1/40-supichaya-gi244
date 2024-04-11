@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5046145187902549608}
   - component: {fileID: 3287601506739819890}
   m_Layer: 7
-  m_Name: Headquarter
+  m_Name: Br_Headquarter
   m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64,7 +64,9 @@ MonoBehaviour:
     stone: 200
   spawnPoint: {fileID: 3721262135670879268}
   rallyPoint: {fileID: 2736510162421666641}
-  unitPrefabs: []
+  unitPrefabs:
+  - {fileID: 186328, guid: 1edc38c082087d041b3917cf5f5b6301, type: 3}
+  - {fileID: 102334, guid: 1ddb1fecbd289b54bb259e424a558b32, type: 3}
   recruitList: []
   unitTimer: 0
   curUnitProgress: 0
