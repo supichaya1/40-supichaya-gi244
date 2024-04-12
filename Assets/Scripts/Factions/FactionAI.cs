@@ -36,7 +36,7 @@ public class FactionAI : MonoBehaviour
         //Create Workers
         if (curHQ != null)
         {
-            if (support.Workers.Count < 5) // if there are less than 5 units, keep recruiting Workers
+            if ((support.Workers.Count + curHQ.CheckNumInRecruitList(0)) < 6) // if there are less than 5 units, keep recruiting Workers
             {
                 // if we can recruit a new worker/builder, do so
                 if (faction.CheckUnitCost(0))
@@ -53,6 +53,24 @@ public class FactionAI : MonoBehaviour
                     curBarrack.ToCreateUnit(0); // recruits main fighter
             }
         }
+        
+        UpdateImportantBuilding();
     }
+    
+    private void UpdateImportantBuilding()
+    {
+        foreach (Building b in faction.AliveBuildings)
+        {
+            if (!b.IsFunctional)
+                continue;
+
+            if (b.IsHQ)
+                curHQ = b;
+
+            if (b.IsBarrack)
+                curBarrack = b;
+        }
+    }
+    
     
 }
