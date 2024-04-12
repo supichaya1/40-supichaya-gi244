@@ -175,6 +175,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: French Soldier (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6372046392670953126, guid: 72ea00204dcbc1842bb53e2deaa2177b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1435,7 +1439,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1428755588}
     m_Modifications:
     - target: {fileID: 336063054654726707, guid: 2f80cff0b95ab234fb24275887730b21, type: 3}
       propertyPath: m_Name
@@ -1443,15 +1447,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3287606292942919031, guid: 2f80cff0b95ab234fb24275887730b21, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 9.6181555
       objectReference: {fileID: 0}
     - target: {fileID: 3287606292942919031, guid: 2f80cff0b95ab234fb24275887730b21, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 66.90627
       objectReference: {fileID: 0}
     - target: {fileID: 3287606292942919031, guid: 2f80cff0b95ab234fb24275887730b21, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 22.03
+      value: -117.39775
       objectReference: {fileID: 0}
     - target: {fileID: 3287606292942919031, guid: 2f80cff0b95ab234fb24275887730b21, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1459,15 +1463,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3287606292942919031, guid: 2f80cff0b95ab234fb24275887730b21, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3287606292942919031, guid: 2f80cff0b95ab234fb24275887730b21, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3287606292942919031, guid: 2f80cff0b95ab234fb24275887730b21, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3287606292942919031, guid: 2f80cff0b95ab234fb24275887730b21, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1518,6 +1522,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f80cff0b95ab234fb24275887730b21, type: 3}
+--- !u!4 &253148808 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3287606292942919031, guid: 2f80cff0b95ab234fb24275887730b21, type: 3}
+  m_PrefabInstance: {fileID: 253148807}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &256635810
 GameObject:
   m_ObjectHideFlags: 0
@@ -2331,6 +2340,10 @@ PrefabInstance:
     - target: {fileID: 6372046392670953126, guid: 72ea00204dcbc1842bb53e2deaa2177b, type: 3}
       propertyPath: m_Name
       value: French Soldier (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6372046392670953126, guid: 72ea00204dcbc1842bb53e2deaa2177b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3166,7 +3179,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1428755588}
     m_Modifications:
     - target: {fileID: 336063054654726707, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
       propertyPath: m_Name
@@ -3174,15 +3187,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3287606292942919031, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 21.4
+      value: 31.018154
       objectReference: {fileID: 0}
     - target: {fileID: 3287606292942919031, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0000009536743
+      value: 66.90627
       objectReference: {fileID: 0}
     - target: {fileID: 3287606292942919031, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 15.6
+      value: -123.82775
       objectReference: {fileID: 0}
     - target: {fileID: 3287606292942919031, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3237,6 +3250,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
+--- !u!4 &646975719 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3287606292942919031, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
+  m_PrefabInstance: {fileID: 646975718}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &657950689
 GameObject:
   m_ObjectHideFlags: 0
@@ -4224,6 +4242,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7696222849239365109, guid: 3bb50ba5c02898148bf50809fe9c7ecb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1477684571}
+    - targetCorrespondingSourceObject: {fileID: 6562714707943780166, guid: 3bb50ba5c02898148bf50809fe9c7ecb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1628345683}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4512308882401663504, guid: 3bb50ba5c02898148bf50809fe9c7ecb, type: 3}
       insertIndex: -1
@@ -4241,6 +4262,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 895544187}
   m_SourcePrefab: {fileID: 100100000, guid: 3bb50ba5c02898148bf50809fe9c7ecb, type: 3}
+--- !u!4 &836003122 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6562714707943780166, guid: 3bb50ba5c02898148bf50809fe9c7ecb, type: 3}
+  m_PrefabInstance: {fileID: 836003121}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &836148514
 GameObject:
   m_ObjectHideFlags: 0
@@ -4608,6 +4634,10 @@ PrefabInstance:
     - target: {fileID: 6372046392670953126, guid: 72ea00204dcbc1842bb53e2deaa2177b, type: 3}
       propertyPath: m_Name
       value: French Soldier (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6372046392670953126, guid: 72ea00204dcbc1842bb53e2deaa2177b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5931,6 +5961,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: French Soldier (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6372046392670953126, guid: 72ea00204dcbc1842bb53e2deaa2177b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6019,7 +6053,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1428755588}
     m_Modifications:
     - target: {fileID: 336063054654726707, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
       propertyPath: m_Name
@@ -6027,15 +6061,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3287606292942919031, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.6
+      value: 30.218155
       objectReference: {fileID: 0}
     - target: {fileID: 3287606292942919031, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0000009536743
+      value: 66.90627
       objectReference: {fileID: 0}
     - target: {fileID: 3287606292942919031, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.9
+      value: -137.52776
       objectReference: {fileID: 0}
     - target: {fileID: 3287606292942919031, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6090,6 +6124,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
+--- !u!4 &1269377376 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3287606292942919031, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
+  m_PrefabInstance: {fileID: 1269377375}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1272942764
 GameObject:
   m_ObjectHideFlags: 0
@@ -6483,7 +6522,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1428755588}
     m_Modifications:
     - target: {fileID: 336063054654726707, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
       propertyPath: m_Name
@@ -6491,15 +6530,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3287606292942919031, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.84
+      value: 0.7781553
       objectReference: {fileID: 0}
     - target: {fileID: 3287606292942919031, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0000009536743
+      value: 66.90627
       objectReference: {fileID: 0}
     - target: {fileID: 3287606292942919031, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 14.25
+      value: -125.17775
       objectReference: {fileID: 0}
     - target: {fileID: 3287606292942919031, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6554,6 +6593,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
+--- !u!4 &1317495098 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3287606292942919031, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
+  m_PrefabInstance: {fileID: 1317495097}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1341917808
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6605,6 +6649,10 @@ PrefabInstance:
     - target: {fileID: 6372046392670953126, guid: 72ea00204dcbc1842bb53e2deaa2177b, type: 3}
       propertyPath: m_Name
       value: French Soldier (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6372046392670953126, guid: 72ea00204dcbc1842bb53e2deaa2177b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6955,6 +7003,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1410451184}
   m_CullTransparentMesh: 1
+--- !u!4 &1428755588 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6562714707943780166, guid: 9a4f56cb5aa264243a23966c91c7149d, type: 3}
+  m_PrefabInstance: {fileID: 2060102357}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1446105822
 GameObject:
   m_ObjectHideFlags: 0
@@ -7593,7 +7646,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 836003122}
     m_Modifications:
     - target: {fileID: 336063054654726707, guid: 086cda6f4d6ef704fadc376aecbdb023, type: 3}
       propertyPath: m_Name
@@ -7601,15 +7654,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3287606292942919031, guid: 086cda6f4d6ef704fadc376aecbdb023, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 9.6181555
       objectReference: {fileID: 0}
     - target: {fileID: 3287606292942919031, guid: 086cda6f4d6ef704fadc376aecbdb023, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 66.90627
       objectReference: {fileID: 0}
     - target: {fileID: 3287606292942919031, guid: 086cda6f4d6ef704fadc376aecbdb023, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -46.3
+      value: -204.3
       objectReference: {fileID: 0}
     - target: {fileID: 3287606292942919031, guid: 086cda6f4d6ef704fadc376aecbdb023, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7617,7 +7670,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3287606292942919031, guid: 086cda6f4d6ef704fadc376aecbdb023, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3287606292942919031, guid: 086cda6f4d6ef704fadc376aecbdb023, type: 3}
       propertyPath: m_LocalRotation.y
@@ -7625,7 +7678,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3287606292942919031, guid: 086cda6f4d6ef704fadc376aecbdb023, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3287606292942919031, guid: 086cda6f4d6ef704fadc376aecbdb023, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7644,6 +7697,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 086cda6f4d6ef704fadc376aecbdb023, type: 3}
+--- !u!4 &1628345683 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3287606292942919031, guid: 086cda6f4d6ef704fadc376aecbdb023, type: 3}
+  m_PrefabInstance: {fileID: 1628345682}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1649223637
 GameObject:
   m_ObjectHideFlags: 0
@@ -8716,6 +8774,10 @@ PrefabInstance:
     - target: {fileID: 6372046392670953126, guid: 72ea00204dcbc1842bb53e2deaa2177b, type: 3}
       propertyPath: m_Name
       value: French Soldier (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6372046392670953126, guid: 72ea00204dcbc1842bb53e2deaa2177b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9957,7 +10019,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6562714707943780166, guid: 9a4f56cb5aa264243a23966c91c7149d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 253148808}
+    - targetCorrespondingSourceObject: {fileID: 6562714707943780166, guid: 9a4f56cb5aa264243a23966c91c7149d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1317495098}
+    - targetCorrespondingSourceObject: {fileID: 6562714707943780166, guid: 9a4f56cb5aa264243a23966c91c7149d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 646975719}
+    - targetCorrespondingSourceObject: {fileID: 6562714707943780166, guid: 9a4f56cb5aa264243a23966c91c7149d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1269377376}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4512308882401663504, guid: 9a4f56cb5aa264243a23966c91c7149d, type: 3}
       insertIndex: -1
@@ -10200,6 +10274,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: French Soldier (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6372046392670953126, guid: 72ea00204dcbc1842bb53e2deaa2177b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10367,9 +10445,4 @@ SceneRoots:
   - {fileID: 198754491}
   - {fileID: 359997477}
   - {fileID: 526310104}
-  - {fileID: 253148807}
-  - {fileID: 1317495097}
-  - {fileID: 646975718}
-  - {fileID: 1269377375}
   - {fileID: 237286382}
-  - {fileID: 1628345682}
