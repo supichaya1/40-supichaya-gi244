@@ -96,6 +96,11 @@ MonoBehaviour:
   - {fileID: 336063054654726707, guid: c174896079818344f90ef4bf3da3c6ff, type: 3}
   - {fileID: 1425645030949416755, guid: bd64f6029d3ddae4ca1214800cdc0045, type: 3}
   - {fileID: 336063054654726707, guid: 33e27eea8e3a52245b9f7444ed058899, type: 3}
+  ghostBuildingPrefabs:
+  - {fileID: 336063054654726707, guid: c446684b0390a554884a954d46077af8, type: 3}
+  - {fileID: 336063054654726707, guid: 55f87c097e245af488ba9b9896f618a3, type: 3}
+  - {fileID: 1425645030949416755, guid: da7b341ea34a47a41a216bd2224eca1f, type: 3}
+  - {fileID: 336063054654726707, guid: acc38967d62ff6b428f89b420fcb9540, type: 3}
   unitPrefabs:
   - {fileID: 102334, guid: 1ddb1fecbd289b54bb259e424a558b32, type: 3}
   - {fileID: 186328, guid: 1edc38c082087d041b3917cf5f5b6301, type: 3}
