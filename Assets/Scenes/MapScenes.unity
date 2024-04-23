@@ -4354,6 +4354,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: France
       objectReference: {fileID: 0}
+    - target: {fileID: 4512308882401663504, guid: 3bb50ba5c02898148bf50809fe9c7ecb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -4409,6 +4413,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4512308882401663504, guid: 3bb50ba5c02898148bf50809fe9c7ecb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 895544192}
+    - targetCorrespondingSourceObject: {fileID: 4512308882401663504, guid: 3bb50ba5c02898148bf50809fe9c7ecb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 895544193}
+    - targetCorrespondingSourceObject: {fileID: 4512308882401663504, guid: 3bb50ba5c02898148bf50809fe9c7ecb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 895544194}
   m_SourcePrefab: {fileID: 100100000, guid: 3bb50ba5c02898148bf50809fe9c7ecb, type: 3}
 --- !u!4 &836003122 stripped
 Transform:
@@ -4651,6 +4661,36 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4da1252a9c5036849af36311c1dde9e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weightMultiplier: 1
+  timePassed: 0
+  rangeFromStartPos: 30
+--- !u!114 &895544193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895544184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93ff6d4ff14e44340853c12c1d8662df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weightMultiplier: 1
+  timePassed: 0
+  rangeFromStartPos: 30
+--- !u!114 &895544194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895544184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b22409f806d74a840b9358c73ed60d60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   weightMultiplier: 1

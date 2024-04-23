@@ -152,6 +152,19 @@ public class Building : Structure
         return num;
     }
     
+    protected override void Die()
+    {
+        if (faction != null)
+            faction.AliveBuildings.Remove(this);
+
+        if (IsHousing)
+            faction.UpdateHousingLimit();
+
+        base.Die();
+
+        //Check Victory Condition
+    }
+    
     
 
 }
