@@ -1492,6 +1492,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7889641753961559543, guid: 2f80cff0b95ab234fb24275887730b21, type: 3}
+      propertyPath: unitPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 186328, guid: 1edc38c082087d041b3917cf5f5b6301, type: 3}
+    - target: {fileID: 7889641753961559543, guid: 2f80cff0b95ab234fb24275887730b21, type: 3}
       propertyPath: unitPrefabs.Array.data[1]
       value: 
       objectReference: {fileID: 102334, guid: 1ddb1fecbd289b54bb259e424a558b32, type: 3}
@@ -1967,6 +1971,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4147353682790525830, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490455764233009550, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9238795
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490455764233009550, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.38268346
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490455764233009550, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
     - target: {fileID: 5113451765626651930, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
       propertyPath: rsrcName
       value: TreeWood4
@@ -2239,6 +2259,22 @@ PrefabInstance:
     - target: {fileID: 4678838047887218, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4147353682790525830, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490455764233009550, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9238795
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490455764233009550, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.38268346
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490455764233009550, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5113451765626651930, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
       propertyPath: rsrcName
@@ -5516,6 +5552,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4147353682790525830, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490455764233009550, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9238795
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490455764233009550, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.38268346
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490455764233009550, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
     - target: {fileID: 5113451765626651930, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
       propertyPath: rsrcName
       value: TreeWood2
@@ -6123,6 +6175,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4147353682790525830, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490455764233009550, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9238795
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490455764233009550, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.38268346
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490455764233009550, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
     - target: {fileID: 5113451765626651930, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
       propertyPath: rsrcName
       value: TreeWood1
@@ -6645,6 +6713,22 @@ PrefabInstance:
     - target: {fileID: 4678838047887218, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4147353682790525830, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490455764233009550, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9238795
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490455764233009550, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.38268346
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490455764233009550, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5113451765626651930, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
       propertyPath: rsrcName
@@ -7335,6 +7419,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4147353682790525830, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490455764233009550, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9238795
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490455764233009550, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.38268346
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490455764233009550, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
     - target: {fileID: 5113451765626651930, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
       propertyPath: rsrcName
       value: TreeWood2
@@ -7840,6 +7940,22 @@ PrefabInstance:
     - target: {fileID: 4678838047887218, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4147353682790525830, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490455764233009550, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9238795
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490455764233009550, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.38268346
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490455764233009550, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5113451765626651930, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
       propertyPath: rsrcName
@@ -9268,6 +9384,22 @@ PrefabInstance:
     - target: {fileID: 4678838047887218, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4147353682790525830, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490455764233009550, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9238795
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490455764233009550, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.38268346
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490455764233009550, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5113451765626651930, guid: c150b16e3ae368046b5f332b0c100d1f, type: 3}
       propertyPath: rsrcName
