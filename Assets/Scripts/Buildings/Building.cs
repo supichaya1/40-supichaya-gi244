@@ -10,9 +10,10 @@ public class Building : Structure
     public Transform RallyPoint { get { return rallyPoint; } }
 
     [SerializeField] private GameObject[] unitPrefabs;
-
     public GameObject[] UnitPrefabs
-    { get { return unitPrefabs; } }
+    {
+        get { return unitPrefabs; }
+    }
 
     [SerializeField] private List<Unit> recruitList = new List<Unit>();
 
@@ -20,22 +21,26 @@ public class Building : Structure
     [SerializeField] private int curUnitProgress = 0;
 
     [SerializeField] private float curUnitWaitTime = 0f;
-    
     [SerializeField] private bool isFunctional;
-    public bool IsFunctional { get { return isFunctional; } set { isFunctional = value; } }
 
+    public bool IsFunctional { get { return isFunctional; } set { isFunctional = value; } }
+    
     [SerializeField] private bool isHQ;
     public bool IsHQ { get { return isHQ; } }
-
+    
     [SerializeField] private bool isHousing;
     public bool IsHousing { get { return isHousing; } }
-
+    
     [SerializeField] private bool isBarrack;
     public bool IsBarrack { get { return isBarrack; } }
-
+    
     [SerializeField] private float intoTheGround = 5f;
     public float IntoTheGround { get { return intoTheGround; } }
-
+    
+    private float timer = 0f; //Constructing timer
+    public float Timer { get { return timer; } set { timer = value; } }
+    private float waitTime = 0.5f; //How fast it will be construct, higher is longer
+    public float WaitTime { get { return waitTime; } set { waitTime = value; } }
     
     // Start is called before the first frame update
     void Start()
@@ -46,12 +51,6 @@ public class Building : Structure
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.G))
-            ToCreateUnit(0);
-        
-        if (Input.GetKeyDown(KeyCode.H))
-            ToCreateUnit(1);
-
         if ((recruitList.Count > 0) && (recruitList[0] != null))
         {
             unitTimer += Time.deltaTime;
@@ -62,7 +61,7 @@ public class Building : Structure
                 curUnitProgress++;
                 unitTimer = 0f;
 
-                if (curUnitProgress >= 100 &&(faction.AliveUnits.Count < faction.UnitLimit))
+                if (curUnitProgress >= 100 && (faction.AliveUnits.Count < faction.UnitLimit))
                 {
                     curUnitProgress = 0;
                     curUnitWaitTime = 0f;
@@ -70,8 +69,6 @@ public class Building : Structure
                 }
             }
         }
-
-
     }
     
     public void ToCreateUnit(int i)
@@ -111,8 +108,7 @@ public class Building : Structure
         if (faction.UnitPrefabs[id] == null)
             return;
 
-        GameObject unitObj = Instantiate(faction.UnitPrefabs[id],
-            spawnPoint.position, Quaternion.Euler(0f, 180f, 0f), faction.UnitsParent);
+        GameObject unitObj = Instantiate(faction.UnitPrefabs[id], spawnPoint.position, Quaternion.Euler(0f, 180f, 0f),faction.UnitsParent);
 
         recruitList.RemoveAt(0);
 
@@ -134,11 +130,6 @@ public class Building : Structure
         if (SelectionVisual != null)
             SelectionVisual.SetActive(flag);
     }
-    
-    private float timer = 0f; //Constructing timer
-    public float Timer { get { return timer; } set { timer = value; } }
-    private float waitTime = 0.5f; //How fast it will be construct, higher is longer
-    public float WaitTime { get { return waitTime; } set { waitTime = value; } }
     
     public int CheckNumInRecruitList(int id)
     {
@@ -166,5 +157,4 @@ public class Building : Structure
     }
     
     
-
 }

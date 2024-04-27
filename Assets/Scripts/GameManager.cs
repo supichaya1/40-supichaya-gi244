@@ -4,23 +4,22 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    
-    [SerializeField] private Faction myFaction;
-    public Faction MyFaction { get { return myFaction; } }
+    [SerializeField] private Factions myFaction;
+    public Factions MyFaction { get { return myFaction; } }
 
-    [SerializeField] private Faction enemyFaction;
-    public Faction EnemyFaction { get { return enemyFaction; } }
+    [SerializeField] private Factions enemyFaction;
+    public Factions EnemyFaction { get { return enemyFaction; } }
 
     //All factions in this game (2 factions for now)
-    [SerializeField] private Faction[] factions;
-    public Faction[] Factions { get { return factions; } }
+    [SerializeField] private Factions[] factions;
+    public Factions[] Factions { get { return factions; } }
 
     public static GameManager instance;
-
+    
     void Awake()
     {
         instance = this;
-        SetupPlayers(Settings.mySide,Settings.EnemySide);
+        SetupPlayers(Settings.mySide, Settings.EnemySide);
     }
 
     // Start is called before the first frame update
@@ -35,10 +34,9 @@ public class GameManager : MonoBehaviour
     {
         
     }
-    
     public void SetupPlayers(Nation myNation, Nation enemyNation)
     {
-        foreach (Faction f in factions)
+        foreach (Factions f in factions)
         {
             //Debug.Log("Now is :" + f);
 

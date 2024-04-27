@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Timers;
 using UnityEngine;
 
 public class VisibilityManager : MonoBehaviour
@@ -13,7 +12,7 @@ public class VisibilityManager : MonoBehaviour
     List<MiniMapBlip> enemyBuildingBlips = new List<MiniMapBlip>();
 
     public static VisibilityManager instance;
-    
+
     
     // Start is called before the first frame update
     void Start()
@@ -69,7 +68,7 @@ public class VisibilityManager : MonoBehaviour
         enemyBuildingBlips.Clear();
 
         // adding all blips into both lists
-        foreach (Faction f in GameManager.instance.Factions)
+        foreach (Factions f in GameManager.instance.Factions)
         {
             foreach (Unit u in f.AliveUnits) //Check units
             {
@@ -100,6 +99,4 @@ public class VisibilityManager : MonoBehaviour
         CheckVisibility(myUnitBlips, enemyUnitBlips);
         CheckVisibility(myUnitBlips, enemyBuildingBlips);
     }
-    
-    
 }

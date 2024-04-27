@@ -12,25 +12,14 @@ public class SelectMap : MonoBehaviour
         mapScene = mapName;
     }
 
-    public void StartGame()
+    public void StatGame()
     {
         if (mapScene == "")
-        return;
+        {
+            return;
+        }
 
         Settings.currentScene = mapScene;
         SceneManager.LoadScene(mapScene);
-    }
-    
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

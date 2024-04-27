@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public enum TurretState
 {
     Idle,
@@ -16,14 +17,16 @@ public class Turret : Building
     [SerializeField] private float shootRange = 50f;
     [SerializeField] private int shootDamage = 10;
     public int ShootDamage { get { return shootDamage; } }
+    
 
     [SerializeField] TurretState state = TurretState.Idle;
+    
     
     // Start is called before the first frame update
     void Start()
     {
         unitLayerMask = LayerMask.GetMask("Unit");
-        InvokeRepeating("CheckForAttack",0f,0.5f);
+        InvokeRepeating("CheckForAttack", 0f, 0.5f);
     }
 
     // Update is called once per frame
@@ -32,8 +35,7 @@ public class Turret : Building
         
     }
     
-    
-// checks for nearby enemies with a sphere cast
+    // checks for nearby enemies with a sphere cast
     protected Unit CheckForNearbyEnemies()
     {
         RaycastHit[] hits = Physics.SphereCastAll(transform.position, detectRange, Vector3.up, unitLayerMask);
@@ -59,7 +61,7 @@ public class Turret : Building
                 continue;
 
             // is this a team mate?
-            else if (faction.IsMyUnit(target))
+            else if (Faction.IsMyUnit(target))
                 continue;
 
             // if it is not the closest enemy or the distance is less than the closest distance it currently has
@@ -78,7 +80,6 @@ public class Turret : Building
         else
             return null;
     }
-    
     protected void ShootAtEnemy()
     {
         if (targetUnit != null)
@@ -96,7 +97,6 @@ public class Turret : Building
             state = TurretState.Idle;
         }
     }
-    
     private void CheckForAttack()
     {
         if (!IsFunctional || CurHP <= 0)

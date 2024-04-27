@@ -6,14 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/ChooseMap.unity
-    guid: c22caf5eeba2d684bb03414f1c466c2c
+    path: Assets/Scenes/MainMenu.unity
+    guid: d625eb426bc06844eab21ea4003372c3
   - enabled: 1
     path: Assets/Scenes/ChooseSide.unity
-    guid: 6380497741fe1b04586fc1c04607e9c3
+    guid: 1219c16d9c62c7a44aff28961d65826f
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: 92a807a67a215144cb405cb19f93a465
+    path: Assets/Scenes/ChooseMap.unity
+    guid: bec135c3040978646a9e18d50ed453b8
   - enabled: 1
     path: Assets/Scenes/MapScene01.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab

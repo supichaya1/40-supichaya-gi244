@@ -6,7 +6,6 @@ public class UnitAnimation : MonoBehaviour
 {
     private Animator anim;
     private Unit unit;
-    
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +24,7 @@ public class UnitAnimation : MonoBehaviour
         anim.SetBool("IsIdle", false);
         anim.SetBool("IsMove", false);
         anim.SetBool("IsAttack", false);
-        
+
         switch (u.State)
         {
             case UnitState.Idle:
@@ -39,6 +38,4 @@ public class UnitAnimation : MonoBehaviour
                 break;
         }
     }
-
-    
 }

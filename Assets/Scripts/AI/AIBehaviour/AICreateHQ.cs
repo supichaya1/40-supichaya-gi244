@@ -13,20 +13,13 @@ public class AICreateHQ : AIBehaviour
 
     protected GameObject buildingObj; //Instantiated Object by Prefab
     protected GameObject buildingObjGhost; //Instantiated Ghost Object by Prefab
-
-    // Start is called before the first frame update
+    
     void Start()
     {
         support = gameObject.GetComponent<AISupport>();
 
         buildingPrefab = support.Faction.BuildingPrefabs[0];
-        buildingGhostPrefab = support.Faction.GhostBuildiingPrefabs[0];
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        buildingGhostPrefab = support.Faction.GhostBuildingPrefabs[0];
     }
     
     public override float GetWeight()
@@ -125,5 +118,4 @@ public class AICreateHQ : AIBehaviour
             }
         }
     }
-
 }

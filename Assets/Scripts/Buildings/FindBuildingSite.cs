@@ -12,7 +12,9 @@ public class FindBuildingSite : MonoBehaviour
     private MeshRenderer[] modelRdr;
     [SerializeField]
     private MeshRenderer planeRdr;
-   
+    
+    
+    // Start is called before the first frame update
     void Start()
     {
         //Setup Building Color

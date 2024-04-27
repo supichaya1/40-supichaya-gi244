@@ -15,25 +15,12 @@ public class SelectSide : MonoBehaviour
 
     private void GoToChooseMap()
     {
-        SceneManager.LoadScene(chooseMapScene); 
+        SceneManager.LoadScene(chooseMapScene);
     }
 
     public void ChooseSide(int i)
     {
         Settings.SelectSide(i);
         GoToChooseMap();
-    }
-    
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

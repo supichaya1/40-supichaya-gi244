@@ -10,7 +10,6 @@ public class SelectionMarker : MonoBehaviour
     {
         Destroy(gameObject, lifetime);
     }
-    
 
     // Update is called once per frame
     void Update()

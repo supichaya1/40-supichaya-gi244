@@ -11,7 +11,6 @@ public class AIStrike : AIBehaviour
     public float squadSize = 0.5f; //Percentage of all fighters assigned to attack as a wave
 
     public float timeLimit = 5f;
-    
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +22,6 @@ public class AIStrike : AIBehaviour
     {
         
     }
-    
     public override float GetWeight()
     {
         if (timePassed < timeLimit)
@@ -54,6 +52,5 @@ public class AIStrike : AIBehaviour
             fighter.MoveToPosition(GameManager.instance.MyFaction.StartPosition.position);
         }
     }
-
 
 }

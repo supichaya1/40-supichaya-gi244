@@ -8,7 +8,11 @@ public abstract class AIBehaviour : MonoBehaviour
     public float WeightMultiplier { get { return weightMultiplier; } }
 
     [SerializeField] protected float timePassed = 0;
-    
+    public float TimePassed { get { return timePassed; } set { timePassed = value; } }
+
+    public abstract float GetWeight();
+    public abstract void Execute();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,9 +24,4 @@ public abstract class AIBehaviour : MonoBehaviour
     {
         
     }
-    
-    public float TimePassed { get { return timePassed; } set { timePassed = value; } }
-
-    public abstract float GetWeight();
-    public abstract void Execute();
 }

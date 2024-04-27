@@ -6,7 +6,7 @@ public class FactionAI : MonoBehaviour
 {
     public float checkRate = 1.0f;
 
-    private Faction faction;
+    private Factions faction;
     private AISupport support = null;
 
     [SerializeField] private Building curHQ;
@@ -19,7 +19,7 @@ public class FactionAI : MonoBehaviour
 
     void Awake()
     {
-        faction = GetComponent<Faction>();
+        faction = GetComponent<Factions>();
     }
 
     void Start()
@@ -27,7 +27,12 @@ public class FactionAI : MonoBehaviour
         support = gameObject.GetComponent<AISupport>();
         InvokeRepeating("Check", 0.0f, checkRate);
     }
-    
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
     private void Check()
     {
         if (faction.AliveBuildings.Count == 0) // if all buildings are destroyed, return
@@ -36,7 +41,7 @@ public class FactionAI : MonoBehaviour
         //Create Workers
         if (curHQ != null)
         {
-            if ((support.Workers.Count + curHQ.CheckNumInRecruitList(0)) < 6) // if there are less than 5 units, keep recruiting Workers
+            if (support.Workers.Count + curHQ.CheckNumInRecruitList(0) < 6) // if there are less than 5 units, keep recruiting Workers
             {
                 // if we can recruit a new worker/builder, do so
                 if (faction.CheckUnitCost(0))
@@ -55,10 +60,9 @@ public class FactionAI : MonoBehaviour
         }
         
         UpdateImportantBuilding();
-        WorkerFindResource(ResourceType.Wood,3);
-        WorkerFindResource(ResourceType.Food,2);
+        WorkerFindResource(ResourceType.Wood, 3);
+        WorkerFindResource(ResourceType.Food, 2);
     }
-    
     private void UpdateImportantBuilding()
     {
         foreach (Building b in faction.AliveBuildings)
@@ -73,7 +77,6 @@ public class FactionAI : MonoBehaviour
                 curBarrack = b;
         }
     }
-    
     private void WorkerFindResource(ResourceType rType, int n)
     {
         foreach (GameObject workerObj in support.Workers)
@@ -100,5 +103,4 @@ public class FactionAI : MonoBehaviour
                 break;
         }
     }
-    
 }

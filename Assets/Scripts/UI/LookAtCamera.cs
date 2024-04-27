@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 [ExecuteInEditMode]
 public class LookAtCamera : MonoBehaviour
@@ -17,3 +18,4 @@ public class LookAtCamera : MonoBehaviour
         transform.eulerAngles = cam.transform.eulerAngles;    
     }
 }
+

@@ -20,7 +20,6 @@ public class UnitCommand : MonoBehaviour
         cam = Camera.main;
 
         layerMask = LayerMask.GetMask("Unit", "Building", "Resource", "Ground");
-
     }
 
     // Update is called once per frame
@@ -31,7 +30,6 @@ public class UnitCommand : MonoBehaviour
         {
             TryCommand(Input.mousePosition);
         }
-
     }
     
     private void UnitsMoveToPosition(Vector3 dest, List<Unit> units)
@@ -41,14 +39,15 @@ public class UnitCommand : MonoBehaviour
             if (u != null)
                 u.MoveToPosition(dest);
         }
+        
     }
-
+    
     private void CommandToGround(RaycastHit hit, List<Unit> units)
     {
-        UnitsMoveToPosition(hit.point,units);
-        CreateVFXMarker(hit.point,MainUI.instance.SelectionMarker);
+        UnitsMoveToPosition(hit.point, units);
+        CreateVFXMarker(hit.point, MainUI.instance.SelectionMarker);
     }
-
+    
     private void TryCommand(Vector2 screenPos)
     {
         Ray ray = cam.ScreenPointToRay(screenPos);
@@ -63,10 +62,10 @@ public class UnitCommand : MonoBehaviour
                     CommandToGround(hit, unitSelect.CurUnits);
                     break;
                 case "Resource":
-                    ResourceCommand(hit,unitSelect.CurUnits);
+                    ResourceCommand(hit, unitSelect.CurUnits);
                     break;
                 case "Unit":
-                    CommandToUnit(hit,unitSelect.CurUnits);
+                    CommandToUnit(hit, unitSelect.CurUnits);
                     break;
                 case "Building":
                     BuildingCommand(hit,unitSelect.CurUnits);
@@ -81,7 +80,6 @@ public class UnitCommand : MonoBehaviour
 
         Instantiate(vfxPrefab, new Vector3(pos.x, 0.1f, pos.z), Quaternion.identity);
     }
-    
     // called when we command units to gather a resource
     private void UnitsToGatherResource(ResourceSource resource, List<Unit> units)
     {
@@ -92,8 +90,8 @@ public class UnitCommand : MonoBehaviour
             else
                 u.MoveToPosition(resource.transform.position);
         }
+        
     }
-    
     private void ResourceCommand(RaycastHit hit, List<Unit> units)
     {
         UnitsToGatherResource(hit.collider.GetComponent<ResourceSource>(), units);
@@ -118,7 +116,7 @@ public class UnitCommand : MonoBehaviour
         if (target.Faction == GameManager.instance.EnemyFaction)// if it is our enemy
             UnitAttackEnemy(target, units);
     }
-    
+
     private void UnitAttackEnemyBuilding(Building enemyBuilding, List<Unit> units)
     {
         foreach (Unit u in units)
@@ -126,7 +124,6 @@ public class UnitCommand : MonoBehaviour
             u.ToAttackBuilding(enemyBuilding);
         }
     }
-    
     private void BuildingCommand(RaycastHit hit, List<Unit> units)
     {
         Building building = hit.collider.gameObject.GetComponent<Building>();
@@ -141,7 +138,7 @@ public class UnitCommand : MonoBehaviour
         {
             if (building.CurHP < building.MaxHP)
             {
-                HelpFixBuilding(hit.collider.gameObject,units);
+                HelpFixBuilding(hit.collider.gameObject, units);
                 StartCoroutine(Formula.BlinkSelection(building.SelectionVisual));
             }
         }

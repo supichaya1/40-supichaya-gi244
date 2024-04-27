@@ -6,15 +6,29 @@ using UnityEngine.UI;
 public class ActionManager : MonoBehaviour
 {
     [SerializeField] private Button[] unitBtns;
+
     [SerializeField] private Button[] buildingBtns;
 
     private CanvasGroup cg;
 
     public static ActionManager instance;
+    
     void Awake()
     {
         instance = this;
         cg = GetComponent<CanvasGroup>();
+    }
+    
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
     
     private void HideCreateUnitButtons()
@@ -95,11 +109,9 @@ public class ActionManager : MonoBehaviour
         //Debug.Log("1 - Click Button: " + n);
         Unit unit = UnitSelect.instance.CurUnits[0];
 
-        if (unit.Builder)
+        if (unit.IsBuilder)
         {
             unit.Builder.ToCreateNewBuilding(n);
         }
     }
-
-
 }

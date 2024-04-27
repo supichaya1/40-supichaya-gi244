@@ -31,5 +31,5 @@ public static class Formula
 
         selectionVisual.SetActive(false);
     }
-    
+
 }

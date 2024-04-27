@@ -5,19 +5,22 @@ using UnityEngine.EventSystems;
 
 public class UnitSelect : MonoBehaviour
 {
+    
     [SerializeField]
     private LayerMask layerMask;
 
-    [SerializeField] private List<Unit> curUnits = new List<Unit>();
+    [SerializeField]
+    private List<Unit> curUnits = new List<Unit>(); //current selected single unit
     public List<Unit> CurUnits { get { return curUnits; } }
 
     private Camera cam;
-    private Faction faction;
+    private Factions faction;
+
+    public static UnitSelect instance;
     
     [SerializeField]
     private Building curBuilding; //current selected single building
     public Building CurBuilding { get { return curBuilding; } }
-    
     [SerializeField]
     private ResourceSource curResource; //current selected resource
     
@@ -26,29 +29,26 @@ public class UnitSelect : MonoBehaviour
     private Vector2 oldAnchoredPos;//Box old anchored position
     private Vector2 startPos;//point where mouse is down
 
-    private float timer = 0.5f;
-    private float timerLimit = 0.5f;
+    private float timer = 0f;
+    private float timeLimit = 0.5f;
     
     [SerializeField]
     private Unit curEnemy;
-    
-    
 
-    public static UnitSelect instance;
-
+    
     void Awake()
     {
-        faction = GetComponent<Faction>();
+        faction = GetComponent<Factions>();
     }
-    
+
     // Start is called before the first frame update
     void Start()
     {
         cam = Camera.main;
         layerMask = LayerMask.GetMask("Unit", "Building", "Resource", "Ground");
         selectionBox = MainUI.instance.SelectionBox;
+
         instance = this;
- 
     }
 
     // Update is called once per frame
@@ -59,17 +59,13 @@ public class UnitSelect : MonoBehaviour
         {
             startPos = Input.mousePosition;
             if (EventSystem.current.IsPointerOverGameObject())
-            {
                 return;
-            }
             
             ClearEverything();
         }
-        
-        //mose held down
+
         if (Input.GetMouseButton(0))
         {
-            //debug.log("Mouse held down")
             UpdateSelectionBox(Input.mousePosition);
         }
 
@@ -77,6 +73,7 @@ public class UnitSelect : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             ReleaseSelectionBox(Input.mousePosition);
+            
             if (IsPointerOverUIObject())
                 return;
             
@@ -84,12 +81,11 @@ public class UnitSelect : MonoBehaviour
         }
 
         timer += Time.deltaTime;
-        if (timer >= timerLimit)
+        if (timer >= timeLimit)
         {
             timer = 0f;
             UpdateUI();
         }
-
     }
     
     private void SelectUnit(RaycastHit hit)
@@ -106,7 +102,6 @@ public class UnitSelect : MonoBehaviour
         }
         else
         {
-            //Single Enemy
             curEnemy = unit;
             curEnemy.ToggleSelectionVisual(true);
             ShowEnemyUnit(unit);
@@ -139,16 +134,25 @@ public class UnitSelect : MonoBehaviour
     private void ClearAllSelectionVisual()
     {
         foreach (Unit u in curUnits)
+        {
             u.ToggleSelectionVisual(false);
+        }
 
         if (curBuilding != null)
+        {
             curBuilding.ToggleSelectionVisual(false);
-        
+        }
+
         if (curResource != null)
+        {
             curResource.ToggleSelectionVisual(false);
-        
+        }
+
         if (curEnemy != null)
+        {
             curEnemy.ToggleSelectionVisual(false);
+        }
+            
     }
     
     private void ClearEverything()
@@ -166,10 +170,24 @@ public class UnitSelect : MonoBehaviour
     private void ShowUnit(Unit u)
     {
         InfoManager.instance.ShowAllInfo(u);
-
         if (u.IsBuilder)
         {
             ActionManager.instance.ShowBuilderMode(u);
+        }
+    }
+    private void BuildingSelect(RaycastHit hit)
+    {
+        curBuilding = hit.collider.GetComponent<Building>();
+        curBuilding.ToggleSelectionVisual(true);
+
+        if (GameManager.instance.MyFaction.IsMyBuilding(curBuilding))
+        {
+            Debug.Log("my building");
+            ShowBuilding(curBuilding);//Show building info
+        }
+        else
+        {
+            ShowEnemyBuilding(curBuilding);
         }
     }
     
@@ -179,28 +197,11 @@ public class UnitSelect : MonoBehaviour
         ActionManager.instance.ShowCreateUnitMode(b);
     }
     
-    private void BuildingSelect(RaycastHit hit)
-    {
-        curBuilding = hit.collider.GetComponent<Building>();
-        curBuilding.ToggleSelectionVisual(true);
-
-        if (GameManager.instance.MyFaction.IsMyBuilding(curBuilding))
-        {
-            //Debug.Log("my building");
-            ShowBuilding(curBuilding);//Show building info
-        }
-        else
-        {
-            ShowBuilding(curBuilding);
-        }
-    }
-    
     private void ShowResource()
     {
         InfoManager.instance.ShowAllInfo(curResource);//Show resource info in Info Panel
 
     }
-
     private void ResourceSelect(RaycastHit hit)
     {
         curResource = hit.collider.GetComponent<ResourceSource>();
@@ -290,7 +291,6 @@ public class UnitSelect : MonoBehaviour
         EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
         return results.Count > 0;
     }
-    
     
     
 }

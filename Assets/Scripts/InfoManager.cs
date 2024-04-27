@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,13 +9,13 @@ public class InfoManager : MonoBehaviour
 {
     [SerializeField] private Image unitPic, hpIcon, rsrcIcon, moveIcon, atkIcon, amrIcon, vslRngIcon, wpRngIcon;
     [SerializeField] private TextMeshProUGUI nameTxt, hpTxt, rsrcTxt, moveTxt, atkTxt, amrTxt, vslRngTxt, wpRngTxt;
-    
-    public static InfoManager instance;
 
-    void Awake()
+    public static InfoManager instance;
+    private void Awake()
     {
         instance = this;
     }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,11 +27,13 @@ public class InfoManager : MonoBehaviour
     {
         
     }
+    
     private void SetPic(Sprite pic)
     {
         unitPic.color = Color.white;
         unitPic.sprite = pic;
     }
+    
     public void ShowAllInfo(Unit unit)
     {
         SetPic(unit.UnitPic);
@@ -54,6 +57,7 @@ public class InfoManager : MonoBehaviour
         wpRngIcon.color = Color.white;
         wpRngTxt.text = $"{unit.WeaponRange}";
     }
+    
     public void ClearAllInfo()
     {
         //Clear Pic

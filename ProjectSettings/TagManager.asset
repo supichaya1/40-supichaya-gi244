@@ -5,9 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Unit
-  - Building
   - Ground
   - Resource
+  - Building
   - GhostBuilding
   layers:
   - Default
@@ -17,8 +17,8 @@ TagManager:
   - Water
   - UI
   - Unit
-  - Building
   - Ground
+  - Building
   - Resource
   - 
   - 

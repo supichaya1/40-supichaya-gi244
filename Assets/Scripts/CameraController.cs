@@ -29,6 +29,7 @@ public class CameraController : MonoBehaviour
     [Header("Rotate")]
     [SerializeField] private float rotationAmount;
     [SerializeField] private Quaternion  newRotation;
+    
 
 
 
@@ -115,4 +116,10 @@ public class CameraController : MonoBehaviour
     {
         transform.position = pos;
     }
+    
+
+
+
+
+
 }

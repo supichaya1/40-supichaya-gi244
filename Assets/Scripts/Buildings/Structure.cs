@@ -10,6 +10,7 @@ public struct StructureCost
     public int gold;
     public int stone;
 }
+
 public abstract class Structure : MonoBehaviour
 {
     [SerializeField]
@@ -28,8 +29,8 @@ public abstract class Structure : MonoBehaviour
     public int MaxHP { get { return maxHP; } set {  maxHP = value; } }
 
     [SerializeField]
-    protected Faction faction; 
-    public Faction Faction { get { return faction; } set { faction = value; } }
+    protected Factions faction;
+    public Factions Faction { get { return faction; } set { faction = value; } }
     
     [SerializeField]
     protected GameObject selectionVisual;
@@ -37,8 +38,8 @@ public abstract class Structure : MonoBehaviour
 
     [SerializeField] 
     private StructureCost structureCost;
-    public  StructureCost StructureCost { get { return structureCost; } set { structureCost = value; } }
-    
+    public StructureCost StructureCost { get { return structureCost; } set { structureCost = value;  } }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -50,19 +51,15 @@ public abstract class Structure : MonoBehaviour
     {
         
     }
-    
     protected virtual void Die()
     {
         InfoManager.instance.ClearAllInfo();
         Destroy(gameObject);
     }
-    
     public void TakeDamage(int damage)
     {
         curHP -= damage;
         if (curHP <= 0)
             Die();
     }
-
-
 }

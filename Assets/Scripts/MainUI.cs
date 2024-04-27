@@ -3,15 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class MainUI : MonoBehaviour
 {
-    [SerializeField]
+    public static MainUI instance;
+    [SerializeField] 
     private GameObject selectionMarker;
-    public GameObject SelectionMarker
-    {
-        get { return selectionMarker; }
-    }
+    public GameObject SelectionMarker { get { return selectionMarker; } }
 
     [SerializeField] private TextMeshProUGUI unitCountText;
     [SerializeField] private TextMeshProUGUI foodText;
@@ -24,9 +23,7 @@ public class MainUI : MonoBehaviour
 
     private Canvas canvas;
     public Canvas Canvas { get { return canvas; } }
-
-    public static MainUI instance;
-
+    
     private void Awake()
     {
         instance = this;
@@ -44,7 +41,7 @@ public class MainUI : MonoBehaviour
     {
         
     }
-    public void UpdateAllResource(Faction faction)
+    public void UpdateAllResource(Factions faction)
     {
         unitCountText.text = $"{faction.AliveUnits.Count}/{faction.UnitLimit}";
         foodText.text = faction.Food.ToString();
@@ -63,5 +60,4 @@ public class MainUI : MonoBehaviour
 
         return newPos;
     }
-
 }

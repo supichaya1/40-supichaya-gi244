@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class AIDoNothing : AIBehaviour
 {
-    private float returnWeight = 0.5f;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +15,8 @@ public class AIDoNothing : AIBehaviour
     {
         
     }
-    
+    private float returnWeight = 0.5f;
+
     public override float GetWeight()
     {
         return returnWeight;
