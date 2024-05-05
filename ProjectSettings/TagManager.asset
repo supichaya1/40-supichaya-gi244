@@ -9,6 +9,7 @@ TagManager:
   - Resource
   - Building
   - GhostBuilding
+  - Coins
   layers:
   - Default
   - TransparentFX

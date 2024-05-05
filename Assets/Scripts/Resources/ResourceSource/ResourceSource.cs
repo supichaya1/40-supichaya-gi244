@@ -34,6 +34,9 @@ public class ResourceSource : MonoBehaviour
     private UnityEvent onRsrcQuantityChange;
     [SerializeField]
     private UnityEvent onInfoQuantityChange;
+
+    private int resourceAmout;
+    private int resourceAmoutMax;
     
     // Start is called before the first frame update
     void Start()
@@ -78,5 +81,10 @@ public class ResourceSource : MonoBehaviour
     {
         if (SelectionVisual != null)
             SelectionVisual.SetActive(selected);
+    }
+
+    private void ResetResourAmout()
+    {
+        quantity = maxQuantity;
     }
 }
